@@ -11,24 +11,32 @@
 
     <link rel="stylesheet" href="style.css" />
 
-    <title>Search the Catalog</title>
+    <title>14.2</title>
   </head>
   <body class="container">
     <div class>
-      <h1>Search the Catalog</h1>
+      <h1>14.2</h1>
 
       <div>
         <input type="number" id="max-price" />
         <label for="max-price">Maximum Price</label>
       </div>
       <div>
-        <input type="checkbox" id="stock" name="stock" />
-        <label for="stock">In Stock Only</label>
+        <input type="radio" id="yes" name="input" />
+        <label for="Yes">Affirmative</label>
       </div>
       <div>
-        <input type="text" id="text" name="text" required />
-        <label for="name">Search by Name</label>
+        <input type="checkbox" id="opt-in" name="checkbox" required />
+        <label for="opt-in">Click It!</label>
       </div>
+      <select name="Options" id="items">
+        <option value="op1">Football</option>
+        <option value="op2">Baseball</option>
+        <option value="op3">Basketball</option>
+        <option value="op4">iPod Touch</option>
+        <option value="op5">iPhone 5</option>
+        <option value="op6">Nexus 7</option>
+      </select>
     </div>
     <script src="./scripts.js" type="module"></script>
   </body>
