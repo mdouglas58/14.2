@@ -3,3 +3,11 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 10px;
 }
+
+.container {
+  border: solid thin red;
+  border-radius: 4px;
+  margin: 0 auto;
+  padding: 8px;
+  width: 250px;
+}
