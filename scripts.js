@@ -69,3 +69,24 @@ const price = 'b';
 console.log(price.startsWith('b'));
 
 console.log(price.startsWith('b', 'f', 'i', 'n'));
+
+function removeItem() {
+  const elem = document.getElementById('delete');
+  elem.parentNode.removeChild(elem);
+  return false;
+}
+
+function pageInit() {
+  const btn = document.getElementById('btnRemoveItem');
+  if (btn.addEventListener) {
+    btn.addEventListener('click', removeItem, false);
+  } else if (btn.attachEvent) {
+    btn.attachEvent('onclick', removeItem);
+  } else {
+    btn.onclick = removeItem;
+  }
+}
+
+document.getElementById('delete').addEventListener('click', e => {
+  document.getElementById('item').remove();
+});
